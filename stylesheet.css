@@ -1,0 +1,157 @@
+/* ---- Encabezado ---- */
+.header2{
+	/* padding: 1px 0; */
+	position:fixed;
+	left: 0%;
+    right: 0%;
+	background-color: #00000077;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo1 {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+    color: rgb(0, 68, 255);
+	font-size: 15px;
+}
+header nav a {
+	color: rgb(21, 58, 100);
+	text-decoration: none;
+	margin-right: 20px;
+	transition: color .4s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: rgb(4, 11, 75);
+}
+
+.encabezado{
+    padding: 55px 0;
+}
+
+
+/* ---- body ---- */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #5fbe8a;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: #FFF;
+    border: 3PX solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 0px 0 10px;
+    transition: .3s 0 ease all;
+}
+
+.formulario__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.5);
+}
+
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0px;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 100px;
+    background: #000;
+    color: burlywood;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #107503;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+/* ---- ---- Mediaqueries ---- ---- */
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: span 1;
+    }
+}

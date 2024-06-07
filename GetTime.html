@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <!-- Logotipo de la empresa -->
+    <header class="header2">
+        <div class="contenedor">
+			<img class="logotipo1" src="imga/I2YouWon'tGetWhatYouWant.png" alt="You won't get what you want" title="You won't get what you want" width="107" >
+			<nav>
+                <a href="VideoTime.html">Home</a>
+			    <a href="GetTime.html" class="activo">Get time</a>
+			</nav>
+		</div>
+	</header>
+    <div class="encabezado">
+
+    </div>
+
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!-- Nombre del archivo multimedia -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text"  class="formulario__input" name="nombre" id="nombre" placeholder="La cotorrisa">
+                </div>
+            </div>
+            <!-- Plataforma -->
+            <div class="formulario__grupo" id="grupo__plataforma">
+                <label for="plataforma" class="formulario__label">Plataforma</label>
+                <div class="formulario__grupo-input">
+                    <input type="text"  class="formulario__input" name="plataforma" id="plataforma" placeholder="YouTube">
+                </div>
+            </div>
+            <!-- Tiempo -->
+            <div class="formulario__grupo" id="grupo__tiempo">
+                <label for="tiempo" class="formulario__label">Tiempo</label>
+                <div class="formulario__grupo-input">
+                    <input type="text"  class="formulario__input" name="tiempo" id="tiempo" placeholder="HH.MM.SS">
+                </div>
+            </div>
+            <!-- Link -->
+            <div class="formulario__grupo" id="grupo__link">
+                <label for="link" class="formulario__label">Link</label>
+                <div class="formulario__grupo-input">
+                    <input type="text"  class="formulario__input" name="link" id="link" placeholder="https://www.youtube.com/watch?v=JWeK8JeaSB0">
+                </div>
+            </div>
+            <!-- Texto error -->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p>
+                    <i class="fas fa-exclamation-triangle"></i><b> Error:</b> Por favor rellene el formulario correctamente
+                </p>
+            </div>
+            <!-- boton enviar -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                    Adding time
+                </p>
+            </div>
+        </form>
+    </main>
+</body>
+
+<script src="videoTime.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</html>
